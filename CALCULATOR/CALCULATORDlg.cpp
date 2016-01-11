@@ -434,6 +434,7 @@ void CCALCULATORDlg::OnBnClickedBack()
 		m_str=m_str.Left(m_str.GetLength()-1);
 	}
 	UpdateData(false);
+	//hehe
 }
 
 
