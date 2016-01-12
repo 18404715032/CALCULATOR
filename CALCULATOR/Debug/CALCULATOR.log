@@ -1,35 +1,19 @@
-﻿生成启动时间为 2016/1/11 22:54:48。
+﻿生成启动时间为 2016/1/12 11:15:55。
      1>项目“C:\Users\dell\Desktop\作业\CALCULATOR\CALCULATOR\CALCULATOR.vcxproj”在节点 2 上(build 个目标)。
      1>InitializeBuildStatus:
          正在创建“Debug\CALCULATOR.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
-         E:\vvs20101010\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\CALCULATOR.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
-         stdafx.cpp
-         E:\vvs20101010\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\CALCULATOR.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt CALCULATOR.cpp CALCULATORDlg.cpp
-         CALCULATORDlg.cpp
-         CALCULATOR.cpp
-         正在生成代码...
+         所有输出均为最新。
+         所有输出均为最新。
        ResourceCompile:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0804" /IDebug\ /nologo /fo"Debug\CALCULATOR.res" CALCULATOR.rc 
+         所有输出均为最新。
        ManifestResourceCompile:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\CALCULATOR.exe.embed.manifest.res" Debug\CALCULATOR_manifest.rc 
+         所有输出均为最新。
        Link:
-         E:\vvs20101010\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\dell\Desktop\作业\CALCULATOR\Debug\CALCULATOR.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\CALCULATOR.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\dell\Desktop\作业\CALCULATOR\Debug\CALCULATOR.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\dell\Desktop\作业\CALCULATOR\Debug\CALCULATOR.lib" /MACHINE:X86 Debug\CALCULATOR.res
-         Debug\CALCULATOR.exe.embed.manifest.res
-         Debug\CALCULATOR.obj
-         Debug\CALCULATORDlg.obj
-         Debug\stdafx.obj
+         所有输出均为最新。
        Manifest:
-         正在删除文件“Debug\CALCULATOR.exe.embed.manifest”。
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\CALCULATOR.exe.embed.manifest" /manifest Debug\CALCULATOR.exe.intermediate.manifest E:\vvs20101010\VC\Include\Manifest\dpiaware.manifest
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\CALCULATOR.exe.embed.manifest.res" Debug\CALCULATOR_manifest.rc 
-       LinkEmbedManifest:
-         E:\vvs20101010\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\dell\Desktop\作业\CALCULATOR\Debug\CALCULATOR.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\CALCULATOR.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\dell\Desktop\作业\CALCULATOR\Debug\CALCULATOR.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\dell\Desktop\作业\CALCULATOR\Debug\CALCULATOR.lib" /MACHINE:X86 Debug\CALCULATOR.res
-         Debug\CALCULATOR.exe.embed.manifest.res
-         Debug\CALCULATOR.obj
-         Debug\CALCULATORDlg.obj
-         Debug\stdafx.obj
-         CALCULATOR.vcxproj -> C:\Users\dell\Desktop\作业\CALCULATOR\Debug\CALCULATOR.exe
+         所有输出均为最新。
+         所有输出均为最新。
        FinalizeBuildStatus:
          正在删除文件“Debug\CALCULATOR.unsuccessfulbuild”。
          正在对“Debug\CALCULATOR.lastbuildstate”执行 Touch 任务。
@@ -37,4 +21,4 @@
 
 生成成功。
 
-已用时间 00:00:05.01
+已用时间 00:00:00.07
