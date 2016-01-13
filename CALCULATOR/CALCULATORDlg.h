@@ -57,7 +57,7 @@ public:
 	afx_msg void OnBnClickedEvolution();
 	afx_msg void OnBnClickedDenominator();
 	afx_msg void OnBnClickedPercent();
-	afx_msg void OnMouseMove(UINT nFlags, CPoint point);
+//	afx_msg void OnMouseMove(UINT nFlags, CPoint point);
 	double x,y;
 	int m_h;
 	int m_m;

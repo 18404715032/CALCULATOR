@@ -97,7 +97,7 @@ BEGIN_MESSAGE_MAP(CCALCULATORDlg, CDialogEx)
 	ON_BN_CLICKED(IDC_EVOLUTION, &CCALCULATORDlg::OnBnClickedEvolution)
 	ON_BN_CLICKED(IDC_DENOMINATOR, &CCALCULATORDlg::OnBnClickedDenominator)
 	ON_BN_CLICKED(IDC_PERCENT, &CCALCULATORDlg::OnBnClickedPercent)
-	ON_WM_MOUSEMOVE()
+//	ON_WM_MOUSEMOVE()
 	ON_WM_TIMER()
 	ON_BN_CLICKED(IDC_CLOC, &CCALCULATORDlg::OnBnClickedCloc)
 END_MESSAGE_MAP()
@@ -461,8 +461,6 @@ void CCALCULATORDlg::OnBnClickedSquare()
 void CCALCULATORDlg::OnBnClickedGuanyu()
 {
 	// TODO: 在此添加控件通知处理程序代码
-	CAboutDlg dlg;
-    dlg.DoModal();
 	MessageBox(L"杨20141105066");
 }
 
@@ -485,7 +483,7 @@ void CCALCULATORDlg::OnBnClickedEvolution()
 	if(_ttof(m_str)<0)
 	{
 		OnBnClickedClear();
-		MessageBox(L"worry!Retry.");
+		MessageBox(L"错误");
 	}
 	temp=_ttof(m_str);
 	double f =sqrt(temp);
@@ -508,7 +506,7 @@ void CCALCULATORDlg::OnBnClickedDenominator()
 	if(_ttof(m_str)==0)
 	{
 		OnBnClickedClear();
-		MessageBox(L"worry!Retry.");
+		MessageBox(L"错误");
 	}
 	m_str.Format(L"%lf",1.0/_ttof(m_str));
 	m_str.Right(1)=="0";
@@ -524,19 +522,19 @@ void CCALCULATORDlg::OnBnClickedPercent()
 }
 
 
-void CCALCULATORDlg::OnMouseMove(UINT nFlags, CPoint point)
-{
-	// TODO: 在此添加消息处理程序代码和/或调用默认值
-	TRACE("X=%d ,Y=%d\n",point.x,point.y);
-	CDialogEx::OnMouseMove(nFlags, point);
-}
+//void CCALCULATORDlg::OnMouseMove(UINT nFlags, CPoint point)
+//{
+//	// TODO: 在此添加消息处理程序代码和/或调用默认值
+//	TRACE("X=%d ,Y=%d\n",point.x,point.y);
+//	CDialogEx::OnMouseMove(nFlags, point);
+//}
 
 
 void CCALCULATORDlg::OnTimer(UINT_PTR nIDEvent)
 {
 	// TODO: 在此添加消息处理程序代码和/或调用默认值
 	int l1=70,l2=50,l3=30;
-	CTime t=CTime::GetCurrentTime();//获取系统时间
+	CTime t=CTime::GetCurrentTime();
 	m_h=t.GetHour();
 	m_m=t.GetMinute();
 	m_s=t.GetSecond();
@@ -578,7 +576,7 @@ void CCALCULATORDlg::OnTimer(UINT_PTR nIDEvent)
 	y=l2*-cos(m_m*(3.1415926/30)+m_s*(3.1415926/1800));
 	pdc->MoveTo(0,0);
 	pdc->LineTo(x,y);
-	CPen pen2(PS_SOLID,2,RGB(0,0,0));
+	CPen pen2(PS_SOLID,2,RGB(0,255,0));
 	pdc->SelectObject(&pen2);
 	x=l2*sin(m_m*(3.1415926/30)+m_s*(3.1415926/1800));
 	y=l2*-cos(m_m*(3.1415926/30)+m_s*(3.1415926/1800));
@@ -586,14 +584,14 @@ void CCALCULATORDlg::OnTimer(UINT_PTR nIDEvent)
 	pdc->LineTo(x,y);
 
 	pdc->SelectObject(&whitepen);
-	x=l3*sin(m_h*(3.1415926/30)+m_m*(3.1415926/1800)+m_s*(3.1415926/10800)+3.1415926);
-	y=l3*-cos(m_h*(3.1415926/30)+m_m*(3.1415926/1800)+m_s*(3.1415926/10800)+3.1415926);
+	x=l3*sin(m_h*(3.1415926/6)+m_m*(3.1415926/360)+m_s*(3.1415926/21600));
+	y=l3*-cos(m_h*(3.1415926/6)+m_m*(3.1415926/360)+m_s*(3.1415926/21600));
 	pdc->MoveTo(0,0);
 	pdc->LineTo(x,y);
-	CPen pen3(PS_SOLID,2,RGB(0,0,0));
+	CPen pen3(PS_SOLID,2,RGB(0,0,255));
 	pdc->SelectObject(&pen3);
-	x=l3*sin(m_h*(3.1415926/30)+m_m*(3.1415926/1800)+m_s*(3.1415926/10800)+3.1415926);
-	y=l3*-cos(m_h*(3.1415926/30)+m_m*(3.1415926/1800)+m_s*(3.1415926/10800)+3.1415926);
+    x=l3*sin(m_h*(3.1415926/6)+m_m*(3.1415926/360)+m_s*(3.1415926/21600));
+	y=l3*-cos(m_h*(3.1415926/6)+m_m*(3.1415926/360)+m_s*(3.1415926/21600));
 	pdc->MoveTo(0,0);
 	pdc->LineTo(x,y);
 
